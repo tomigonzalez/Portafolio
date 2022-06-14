@@ -1,7 +1,7 @@
 body {    background-color: black;
     padding: 0;
     margin: 0;
-    HEIGHT: 340vh;
+    HEIGHT: 100%;
     
 }
 html{   scroll-behavior: smooth;}
@@ -182,7 +182,7 @@ li{font-family: 'Fredoka One', cursive;
 /*/////////////////////////////////////////////////*/
 .block { border-top: 5px solid #ff009c;
          width: 100%;
-         height: 100VH;
+         height: 100%;
          background-color: black;
         }
 .block h2 {
@@ -193,13 +193,12 @@ li{font-family: 'Fredoka One', cursive;
     font-size: x-large;
     place-content: center;}
 
-.block1 { justify-content: center;
-    height: 100%;
-    grid-gap: 5%;
-    display: grid;
-    grid-template-columns: 23% 23% 23%;
-    grid-template-rows: 35% 35%;
-    WIDTH: 100%;
+.block1 {     display: grid;
+    grid-template-columns: 2FR 2FR 2FR;
+   
+    HEIGHT: 90%;
+    gap: 5%;
+    margin: 5%;
 }
 .icon {
     border-radius: 5%;
@@ -234,6 +233,9 @@ li{font-family: 'Fredoka One', cursive;
 .item{scroll-margin-top: 13.4ex;
 
 }
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
    
    @media (max-width: 1300px) and (min-width:1100px){
     .inicial img {width:55%;
@@ -241,12 +243,14 @@ li{font-family: 'Fredoka One', cursive;
     .item{scroll-margin-top: 12.8ex;
        }
    }
-  
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/  
    @media (max-width: 1100px) and (min-width:850px){
     .item{scroll-margin-top: 12.6ex;
     }
-    .block1 { grid-template-rows: 40% 40%;
-          grid-template-columns: 25% 25% 25%;}
+   
     .inicial img {width:60%;
     } 
     .contenedor1 { display: inline-block;}
@@ -257,10 +261,16 @@ li{font-family: 'Fredoka One', cursive;
     .contenedor4 img {width: 40%; }
 
    }
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
    @media (max-width: 850px) and (min-width:700px){
-    .block1 { grid-template-rows: 40% 40% 40%;
-              grid-template-columns: 30% 30% ;}
-    .item{scroll-margin-top: 16ex;
+
+    
+    .block1 {    margin-bottom: 15%;
+                 grid-template-columns: 2FR 2FR;}
+   
+    .item{scroll-margin-top: 20.3ex;
     }
     .inicial img {width: 80%;
     } 
@@ -278,11 +288,16 @@ li{font-family: 'Fredoka One', cursive;
     background-color: black;}
 
    }
+   
 
-   @media (max-width: 700px) and (min-width:450px){
-    .block1 { grid-template-rows: 42% 42% 42%;
-        grid-template-columns: 40% 40% ;}
-    .item{scroll-margin-top: 16ex;
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+   @media (max-width: 700px) and (min-width:500px){
+    .block1 {    margin-bottom: 18%;
+        grid-template-columns: 2FR 2FR;}
+    
+    .item{scroll-margin-top: 18ex;
     }
     .icon img {width: 30%;}
     .icon b {margin-top: 0;
@@ -306,10 +321,19 @@ li{font-family: 'Fredoka One', cursive;
 
    }
 
-   @media (max-width: 450px){
-    .block1 { grid-template-rows: 43% 43% 43% 43% 43% 43%;
-        grid-template-columns: 50% ;}
-    .item{scroll-margin-top: 12.8ex;
+   /*/////////////////////////////////////////////////////////////////*/
+
+   @media (max-width: 500px){
+    .block {margin-bottom: 60%;}
+
+    .block1 {margin-bottom: 60%;
+        grid-template-columns: 2FR;
+        justify-items: center;
+        gap: 2%;
+    }
+    .icon {width: 70%;}
+   
+    .item{scroll-margin-top: 17.5ex;
     }
     .icon img {width: 30%;}
     .icon b {margin-top: 0;
