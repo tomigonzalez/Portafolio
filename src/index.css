@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #494f5b; /* Color del thumb */
+  border-radius: 10px; /* Radio del borde del thumb */
+  /* Borde alrededor del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del thumb al pasar el cursor */
+}
