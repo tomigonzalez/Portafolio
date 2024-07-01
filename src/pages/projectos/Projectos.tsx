@@ -34,9 +34,8 @@ const Projectos = () => {
               <div className="flex flex-col text-lg text-left font-ubuntu w-1/4">
                 <SimpleSlider imgUrl={item.imgUrl}></SimpleSlider>
               </div>
-              <div className="flex flex-col text-lg text-left font-ubuntu w-8/12">
+              <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu w-8/12">
                 <h2>{item.title}</h2>
-                <p className="text-sm font-ubuntu">{item.link}</p>
               </div>
             </div>
           </Button>
@@ -65,7 +64,7 @@ const Projectos = () => {
                       target="_blank"
                       className="rounded p-2 m-2 bg-tertiary"
                     >
-                      GitHub
+                      Ver Proyecto
                     </a>
                   </div>
                 </>

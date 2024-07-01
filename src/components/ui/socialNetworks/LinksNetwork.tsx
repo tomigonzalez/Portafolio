@@ -7,27 +7,31 @@ export default function LinksNetwork() {
   return (
     <div className="w-full flex flex-row justify-evenly mt-6 mb-4 ">
       <a
-        href="#"
-        className="text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste"
+        href="www.linkedin.com/in/tomigonzalez"
+        target="_blank"
+        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste"
       >
         <SlSocialLinkedin />
       </a>
       <a
-        href="#"
-        className="text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        href="https://github.com/tomigonzalez"
+        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        target="_blank"
       >
         <ImGithub />
       </a>
       <a
-        href="#"
-        className="text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        href="https://www.figma.com/@tomigonnzalez"
+        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        target="_blank"
       >
         <SiFigma />
       </a>
 
       <a
-        href="#"
-        className="text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        href="https://drive.google.com/file/d/1pjINSIHgNrpw79h3wTdOCAdYTsZs9pFw/view?usp=drive_link"
+        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        target="_blank"
       >
         <IoDocumentAttachOutline />
       </a>

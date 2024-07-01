@@ -12,16 +12,12 @@ export default function Principal() {
           ></img>
         </div>
       </div>
-      <div className="mt-10 flex h-12 w-full items-center justify-between pl-10 pr-10  font-ubuntu font-semibold">
-        <div className=" text-xs font-ubuntu">
-          <p>
-            REPOSITORIOS: <span className="text-xl">29</span>
-          </p>
+      <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
+        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex">
+          <p>REPOSITORIOS: 29</p>
         </div>
-        <div className=" text-xs">
-          <p>
-            COMMITS: <span className="text-xl">275</span>
-          </p>
+        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex">
+          <p>COMMITS: 275</p>
         </div>
       </div>
       <div className="flex w-full flex-col text-center  font-ubuntu font-semibold">

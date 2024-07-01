@@ -29,14 +29,14 @@ const Estudios = () => {
             onPress={() => handleOpen(index)}
             className="text-slate-300 capitalize z-50 w-full flex flex-col p-2 bg-tertiary rounded-lg h-auto   border-tertiary border hover:border-celeste"
           >
-            <div className="flex flex-row  w-full justify-between items-center">
+            <div className="flex lg:flex-row lg:items-center items-start flex-col  w-full justify-between ">
               <div className="flex flex-col text-lg text-left">
                 <h2>{item.title}</h2>
 
                 <p>{item.from}</p>
               </div>
 
-              <div>
+              <div className="">
                 <p>{item.age}</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Estudios = () => {
             onClose={handleClose}
             className="items-center"
           >
-            <ModalContent className="bg-tertiary text-slate-300 ">
+            <ModalContent className="bg-tertiary text-slate-300 self-center ">
               {() => (
                 <>
                   <ModalHeader className="flex flex-col gap-1 ">
