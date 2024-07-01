@@ -18,10 +18,10 @@ const SobreMi = () => {
         </p>
 
         <p>
-          Actualmente estoy haciendo pasantias en la empresa "NASPERU", en la
-          cual aprendi a manejar WordPress, y tambien mejorar mis habilidades de
-          PHP, JS , HTML y CSS. Tambien estoy realizando el programa formativo
-          "Codo a Codo 4.0" sobre Full-stack con Node.js.
+          Actualmente estoy en el area de sistemas en la empresa "NASPERU", en
+          la cual aprendi a manejar WordPress, y tambien mejorar mis habilidades
+          de PHP, Laravel, JS, HTML y CSS. Tambien estoy realizando el programa
+          formativo "Codo a Codo 4.0" sobre Full-stack con Node.js.
         </p>
         <p>
           A demas incursiono en UX/UI, creando mis propios diseños/maquetas e
