@@ -34,13 +34,13 @@ const ChipTabs: React.FC = () => {
         </button>
         <div className="dropdown-content  bg-tertiary  font-ubuntu font-bold">
           <a
-            href="/estudios"
+            href="estudios"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
           >
             ESTUDIOS
           </a>
           <a
-            href="/contacto"
+            href="contacto"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
           >
             CONTACTO
