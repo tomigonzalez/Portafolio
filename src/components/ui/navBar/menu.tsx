@@ -40,7 +40,7 @@ const ChipTabs: React.FC = () => {
             ESTUDIOS
           </a>
           <a
-            href="#/estudios"
+            href="#/contacto"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
           >
             CONTACTO
