@@ -19,10 +19,10 @@ const AppRoutes: React.FC = () => {
         <Route path="projectos" element={<Projectos />}></Route>
       </Route>
 
-      <Route path="contacto" element={<LayoutSecundario />}>
+      <Route path="/contacto" element={<LayoutSecundario />}>
         <Route index element={<Contacto />}></Route>
       </Route>
-      <Route path="estudios" element={<LayoutSecundario />}>
+      <Route path="/estudios" element={<LayoutSecundario />}>
         <Route index element={<Estudios />}></Route>
       </Route>
 
