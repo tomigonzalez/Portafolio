@@ -30,9 +30,9 @@ const Experiencia = () => {
             className="capitalize w-full bg-tertiary rounded-lg h-auto mb-4 border-tertiary border hover:border-celeste"
           >
             <div className="flex flex-row items-center w-full justify-between text-white p-2">
-              <div className="flex flex-col text-lg text-left font-ubuntu">
+              <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu">
                 <h2>{item.from}</h2>
-                <p className="text-sm font-ubuntu">{item.area}</p>
+                <p className="sm:text-sm text-xs font-ubuntu">{item.area}</p>
               </div>
               <div className="font-ubuntu">
                 <p>{item.age}</p>
@@ -45,7 +45,7 @@ const Experiencia = () => {
             isOpen={openModal === index}
             onClose={handleClose}
           >
-            <ModalContent className=" bg-secondary text-slate-300">
+            <ModalContent className=" bg-secondary text-slate-300 self-center ">
               {() => (
                 <>
                   <ModalHeader className="flex flex-col  ">
@@ -57,7 +57,7 @@ const Experiencia = () => {
                     <p>Tecnologías: {item.techonolgies}</p>
                     <p>{item.descrpcion}</p>
                   </ModalBody>
-                  <div className="w-full  h-full text-center mb-4 mt-4">
+                  <div className="w-full h-full text-center mb-4 mt-4">
                     <a
                       href="https://github.com/tomigonzalez"
                       target="_blank"

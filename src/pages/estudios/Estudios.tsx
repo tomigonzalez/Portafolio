@@ -58,11 +58,12 @@ const Estudios = () => {
             backdrop={"blur"}
             isOpen={openModal === index}
             onClose={handleClose}
+            className="items-center"
           >
-            <ModalContent className="bg-tertiary text-slate-300">
+            <ModalContent className="bg-tertiary text-slate-300 ">
               {() => (
                 <>
-                  <ModalHeader className="flex flex-col gap-1">
+                  <ModalHeader className="flex flex-col gap-1 ">
                     <a href={item.link} target="_blank">
                       {item.from}
                     </a>

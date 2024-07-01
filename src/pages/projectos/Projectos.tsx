@@ -46,7 +46,7 @@ const Projectos = () => {
             isOpen={openModal === index}
             onClose={handleClose}
           >
-            <ModalContent className="bg-secondary text-slate-300">
+            <ModalContent className="bg-secondary text-slate-300 self-center ">
               {() => (
                 <>
                   <ModalHeader className="flex flex-col gap-1">
