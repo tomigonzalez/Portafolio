@@ -30,7 +30,10 @@ const SobreMi = () => {
         <p>En constante búsqueda de desafíos , crecimiento y aprendizaje :D</p>
       </div>
       <div className="">
-        <Button radius="lg" className="bg-tertiary text-white shadow-lg ">
+        <Button
+          radius="lg"
+          className="bg-tertiary text-white shadow-lg animate-fade-down animate-delay-[350ms]"
+        >
           Descargar CV
         </Button>
       </div>

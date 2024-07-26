@@ -29,10 +29,10 @@ const ChipTabs: React.FC = () => {
         />
       ))}
       <div className="dropdown">
-        <button className=" xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.6rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
+        <button className="animate-fade xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.6rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
           MAS
         </button>
-        <div className="dropdown-content  bg-tertiary  font-ubuntu font-bold">
+        <div className="animate-fade-left dropdown-content  bg-tertiary  font-ubuntu font-bold">
           <a
             href="#/estudios"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
@@ -61,7 +61,7 @@ interface ChipProps {
 const Chip: React.FC<ChipProps> = ({ text, path, selected, setSelected }) => {
   return (
     <>
-      <Link to={path} className="h-full content-center">
+      <Link to={path} className="h-full content-center animate-fade">
         <button
           onClick={() => setSelected(path)}
           className={`h-full ${
@@ -77,7 +77,7 @@ const Chip: React.FC<ChipProps> = ({ text, path, selected, setSelected }) => {
             <motion.span
               layoutId="pill-tab"
               transition={{ type: "spring", duration: 0.5 }}
-              className="absolute inset-0 z-0 bg-gradient-to-r from-hov to-hov rounded-md"
+              className="absolute inset-0 z-0 bg-gradient-to-r from-hov to-hov rounded-md "
             ></motion.span>
           )}
         </button>

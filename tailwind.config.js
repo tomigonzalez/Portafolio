@@ -23,5 +23,6 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  // eslint-disable-next-line no-undef
+  plugins: [nextui(), require("tailwindcss-animated")],
 };

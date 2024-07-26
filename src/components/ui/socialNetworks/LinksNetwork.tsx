@@ -9,20 +9,20 @@ export default function LinksNetwork() {
       <a
         href="www.linkedin.com/in/tomigonzalez"
         target="_blank"
-        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste"
+        className="animate-fade-down text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste"
       >
         <SlSocialLinkedin />
       </a>
       <a
         href="https://github.com/tomigonzalez"
-        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        className="animate-fade-down animate-delay-[150ms] text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
         target="_blank"
       >
         <ImGithub />
       </a>
       <a
         href="https://www.figma.com/@tomigonnzalez"
-        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        className="animate-fade-down animate-delay-[250ms] text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
         target="_blank"
       >
         <SiFigma />
@@ -30,7 +30,7 @@ export default function LinksNetwork() {
 
       <a
         href="https://drive.google.com/file/d/1pjINSIHgNrpw79h3wTdOCAdYTsZs9pFw/view?usp=drive_link"
-        className="text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
+        className="animate-fade-down animate-delay-[350ms] text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
         target="_blank"
       >
         <IoDocumentAttachOutline />
