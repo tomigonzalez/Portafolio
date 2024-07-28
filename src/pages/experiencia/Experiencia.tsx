@@ -27,7 +27,7 @@ const Experiencia = () => {
           <Button
             variant="flat"
             onPress={() => handleOpen(index)}
-            className="capitalize w-full bg-tertiary rounded-lg h-auto mb-4 border-tertiary border hover:border-celeste"
+            className="  animate-fade capitalize w-full bg-tertiary rounded-lg h-auto mb-4 border-tertiary border hover:border-celeste"
           >
             <div className="flex flex-row items-center w-full justify-between text-white p-2">
               <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu">

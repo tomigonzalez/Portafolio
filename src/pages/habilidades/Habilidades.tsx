@@ -28,7 +28,7 @@ import {
 
 const Habilidades = () => {
   return (
-    <div className="w-4/5 h-56 overflow-y-auto flex flex-col gap-4 pb-1">
+    <div className="w-4/5 h-56 overflow-y-auto flex flex-col gap-4 pb-1  animate-fade">
       <div className="flex flex-col gap-2">
         <h2 className="text-slate-300">Front End</h2>
         <div className="flex flex-row w-full gap-2 text-3xl">

@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 const SobreMi = () => {
   return (
     <>
-      <div className="w-4/5  h-56 overflow-y-auto">
+      <div className="w-4/5  h-56 overflow-y-auto animate-fade">
         <p>
           Desarrollador web de 24 años especializado en Front-end con
           experiencia en React.

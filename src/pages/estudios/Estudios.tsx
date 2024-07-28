@@ -27,7 +27,8 @@ const Estudios = () => {
           <Button
             variant="flat"
             onPress={() => handleOpen(index)}
-            className="text-slate-300 capitalize z-50 w-full flex flex-col p-2 bg-tertiary rounded-lg h-auto   border-tertiary border hover:border-celeste"
+            className={`animate-fade text-slate-300 capitalize z-50 w-full flex flex-col p-2 bg-tertiary rounded-lg h-auto border-tertiary border hover:border-celeste transition-opacity duration-500 ease-in-out`}
+            style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="flex lg:flex-row lg:items-center items-start flex-col  w-full justify-between ">
               <div className="flex flex-col text-lg text-left">
