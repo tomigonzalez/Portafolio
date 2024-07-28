@@ -21,14 +21,11 @@ export default function Principal() {
         </div>
       </div>
       <div className="flex w-full flex-col text-center  font-ubuntu font-semibold">
-        <div
-          className="flex w-full flex-row gap-2 items-center justify-center  animate-fade-right
-"
-        >
+        <div className="flex w-full flex-row gap-2 items-center justify-center ">
           <h1 className="text-lg">Gonzalez Correa Tomas</h1>
           <RiVerifiedBadgeFill className="text-celeste text-xl" />
         </div>
-        <h2 className={` text-[0.6rem] antialiased  animate-fade-left`}>
+        <h2 className={` text-[0.6rem] antialiased `}>
           DESARROLLADOR FRONT END / BACK END
         </h2>
       </div>
