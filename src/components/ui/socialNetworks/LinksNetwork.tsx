@@ -7,7 +7,7 @@ export default function LinksNetwork() {
   return (
     <div className="w-full flex flex-row justify-evenly mt-6 mb-4 ">
       <a
-        href="www.linkedin.com/in/tomigonzalez"
+        href="https://www.linkedin.com/in/tomigonzalez"
         target="_blank"
         className="animate-fade-down text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste"
       >
