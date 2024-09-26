@@ -10,7 +10,7 @@ const LayoutPrimario: React.FC = () => {
       <Principal></Principal>
       <LinksNetwork></LinksNetwork>
       <NavBar></NavBar>
-      <section className="w-full flex mt-4 flex-col items-center gap-4  font-ubuntu sm:text-[1rem] sm:font-normal text-[0.9rem]">
+      <section className="w-full  h-auto flex mt-4 flex-col items-center gap-4  font-ubuntu sm:text-[1rem] sm:font-normal text-[0.9rem]">
         <Outlet />
       </section>
     </div>

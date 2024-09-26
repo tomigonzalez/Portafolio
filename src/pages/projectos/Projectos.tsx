@@ -22,7 +22,7 @@ const Projectos = () => {
   };
 
   return (
-    <div className="w-4/5 h-60 pr-2 overflow-y-auto overflow-x-hidden flex flex-col gap-4">
+    <div className="w-4/5 h-[30vh] sm:h-[40vh] lg:h-[30vh] pr-2 overflow-y-auto overflow-x-hidden flex flex-col gap-4">
       {data.map((item, index) => (
         <div key={index}>
           <Button
