@@ -25,7 +25,7 @@ const proyectosData = [
       "/casinoMac.png , /casinoPc.png , /casinoIpad.png , /casinoIphone.png",
   },
   {
-    title: "Consumo Api Twitch , YT ,etc",
+    title: "Consumo Api ",
     link: "https://github.com/tomigonzalez/React-Ts",
     info: "Pagina web en construccion, la realice con el fin de practicar el consumo de Apis , en este caso consumi la api de Twitch, Youtube, y en un futuro lo haria con Twitter e Instagram. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/coscumobile.png , /coscupc.png",
@@ -37,7 +37,7 @@ const proyectosData = [
     imgUrl: "/shoesMac.png , /shoesPc.png , /shoesIpad.png , /shoesIpone.png ",
   },
   {
-    title: "Codo a Codo - ecommerce",
+    title: "Ecommerce",
     link: "https://github.com/tomigonzalez/CoC-FrontEnd",
     info: "Desarrollo web responsive con HTML, CSS Y JS. Para el final de un modulo del programa codo a codo",
     imgUrl: "/Cocmob.png , /Cocpc.png",
