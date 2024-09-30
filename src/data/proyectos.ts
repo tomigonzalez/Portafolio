@@ -1,5 +1,11 @@
 const proyectosData = [
   {
+    title: "Web Streamer",
+    link: "https://github.com/tomigonzalez/C0ker",
+    info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick con axios. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
+    imgUrl: "/cokermobile.png , /cokerpc.png , /cokertablet.png",
+  },
+  {
     title: "Challenge React-Estados",
     link: "https://github.com/tomigonzalez/ChallengeNotion",
     info: "Este es un challenge que hice en el cual practique el uso de estados , utlilizando tanto UseState como Contexts. Es un diseño responsive con Tailwind siguiendo los parametros y caracteristicas que me dieron las cuales estan detalladas en el repositorio de git hub",
