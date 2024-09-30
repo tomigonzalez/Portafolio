@@ -2,7 +2,7 @@ const proyectosData = [
   {
     title: "Web Streamer",
     link: "https://github.com/tomigonzalez/C0ker",
-    info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick con axios. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
+    info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/cokermobile.png , /cokerpc.png , /cokertablet.png",
   },
   {
