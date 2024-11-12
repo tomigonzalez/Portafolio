@@ -13,12 +13,8 @@ export default function Principal() {
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
-        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex">
-          <p>REPOSITORIOS: 32</p>
-        </div>
-        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex">
-          <p>COMMITS: 300</p>
-        </div>
+        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex"></div>
+        <div className="text-xs sm:text-xs font-ubuntu hidden sm:flex"></div>
       </div>
       <div className="flex w-full flex-col text-center  font-ubuntu font-semibold">
         <div className="flex w-full flex-row gap-2 items-center justify-center ">

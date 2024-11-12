@@ -39,12 +39,12 @@ const ChipTabs: React.FC = () => {
           >
             ESTUDIOS
           </a>
-          <a
+          {/* <a
             href="#/contacto"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
           >
             CONTACTO
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
