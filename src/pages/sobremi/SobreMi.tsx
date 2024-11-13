@@ -11,16 +11,16 @@ const SobreMi = () => {
           tecnologías.
         </p>
         <p>
-          Soy aprendiz autodidacta, aunque también me formé realizando bootcamp
+          Soy aprendiz autodidacta, aunque también me formé realizando bootcamps
           y estoy estudiando Sistemas en la Universidad.
         </p>
 
-        <p>
+        {/* <p>
           Actualmente estoy en el área de sistemas en la empresa "NASPERU", en
           la cual aprendí a manejar WordPress, y también mejorar mis habilidades
           de PHP, Laravel, JS, HTML y CSS. También estoy realizando el programa
           formativo "Codo a Codo 4.0" sobre Full-stack con Node.js.
-        </p>
+        </p> */}
         <p>
           Además incursiono en UX/UI, creando mis propios diseños/maquetas e
           imágenes en Photoshop o Figma para las webs que realizo.

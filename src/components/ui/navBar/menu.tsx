@@ -29,7 +29,7 @@ const ChipTabs: React.FC = () => {
         />
       ))}
       <div className="dropdown">
-        <button className="animate-fade xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.6rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
+        <button className="animate-fade xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
           MAS
         </button>
         <div className="animate-fade-left dropdown-content  bg-tertiary  font-ubuntu font-bold">
@@ -70,7 +70,7 @@ const Chip: React.FC<ChipProps> = ({ text, path, selected, setSelected }) => {
               : "text-slate-300 hover:text-slate-200 hover:bg-hov"
           } flex items-center transition-colors px-2.5 py-0.5 rounded-md relative`}
         >
-          <span className="relative z-10 xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.6rem]">
+          <span className="relative z-10 xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem]">
             {text}
           </span>
           {selected && (
