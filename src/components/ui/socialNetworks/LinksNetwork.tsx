@@ -14,7 +14,9 @@ export default function LinksNetwork() {
         >
           <SlSocialLinkedin />
         </a>
-        <p className="text-sm font-semibold text-slate-300">Likedin</p>
+        <p className="xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-semibold text-slate-300">
+          Likedin
+        </p>
       </div>
 
       <div className="flex flex-col text-center animate-fade-down animate-delay-[150ms] ">
@@ -25,7 +27,9 @@ export default function LinksNetwork() {
         >
           <ImGithub />
         </a>
-        <p className="text-sm font-semibold text-slate-300">Git hub</p>
+        <p className="xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-semibold text-slate-300">
+          Git hub
+        </p>
       </div>
       <div className="flex flex-col text-center animate-fade-down animate-delay-[250ms]">
         <a
@@ -35,7 +39,9 @@ export default function LinksNetwork() {
         >
           <SiFigma />
         </a>
-        <p className="text-sm font-semibold text-slate-300">Figma</p>
+        <p className="xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-semibold text-slate-300">
+          Figma
+        </p>
       </div>
       <div className="flex flex-col text-center animate-fade-down animate-delay-[350ms]">
         <a
@@ -45,7 +51,10 @@ export default function LinksNetwork() {
         >
           <IoDocumentAttachOutline />
         </a>
-        <p className="text-sm font-semibold text-slate-300"> Cv</p>
+        <p className="xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-semibold text-slate-300">
+          {" "}
+          Cv
+        </p>
       </div>
     </div>
   );
