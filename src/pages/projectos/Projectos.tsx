@@ -34,7 +34,7 @@ const Projectos = () => {
               <div className="flex flex-col text-lg text-left font-ubuntu w-1/4">
                 <SimpleSlider imgUrl={item.imgUrl}></SimpleSlider>
               </div>
-              <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu w-8/12">
+              <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu w-8/12 gap-4">
                 <h2>{item.title}</h2>
 
                 {item.techonolgies && (
