@@ -44,7 +44,7 @@ const Projectos = () => {
                       .map((technology, techIndex) => (
                         <li
                           key={techIndex}
-                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.3rem] font-medium rounded text-center h-6 flex items-center pl-1 pr-1 text-white"
+                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.3rem] font-medium rounded text-center h-5 flex items-center pl-1 pr-1 text-white"
                         >
                           <p className="h-4 flex items-center">
                             {" "}
