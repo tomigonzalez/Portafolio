@@ -44,9 +44,12 @@ const Projectos = () => {
                       .map((technology, techIndex) => (
                         <li
                           key={techIndex}
-                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.2rem] font-medium rounded text-center h-1/2 pl-1 pr-1 text-white"
+                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.3rem] font-medium rounded text-center h-6 flex items-center pl-1 pr-1 text-white"
                         >
-                          {technology.trim()}
+                          <p className="h-4 flex items-center">
+                            {" "}
+                            {technology.trim()}
+                          </p>
                         </li>
                       ))}
                   </ul>
