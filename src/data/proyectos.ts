@@ -4,32 +4,28 @@ const proyectosData = [
     link: "https://github.com/tomigonzalez/C0ker",
     info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/cokermobile.png , /cokerpc.png , /cokertablet.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "REACT, AXIOS, TAILWIND, HOOKS, RESPONSIVE",
   },
   {
     title: "CHALLENGE REACT-ESTADOS",
     link: "https://github.com/tomigonzalez/ChallengeNotion",
     info: "Este es un challenge que hice en el cual practique el uso de estados , utlilizando tanto UseState como Contexts. Es un diseño responsive con Tailwind siguiendo los parametros y caracteristicas que me dieron las cuales estan detalladas en el repositorio de git hub",
     imgUrl: "/challengepc.png , /challengemobile.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "REACT, TAILWIND, CONTEXT, STATES, RESPONSIVE",
   },
   {
     title: "WEB WORDPRESS-ENFOLD",
     link: "https://inver.hawktestserver.com/",
     info: "Esta es una web responsive que realice con Wordpress utilizando el tema Enfold, siguiendo una maqueta dada por el equipo de diseño.",
     imgUrl: "/inverPc.png , /inverIpad.png , /inverIpone.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "WORDPRESS,RESPONSIVE, HTML, CSS, JAVASCRIPT",
   },
   {
     title: "WEB WORDPRESS-ENFOLD",
     link: "https://quiz.hawktestserver.com/",
     info: "Esta es una web responsive que realice con Wordpress utilizando el tema Enfold, siguiendo una maqueta dada por el equipo de diseño.",
     imgUrl: "/quizPc.png , /quizIpad.png , /quizIpone.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "WORDPRESS, HTML, CSS,RESPONSIVE, JAVASCRIPT",
   },
   {
     title: "CASINO FULL STACK",
@@ -38,31 +34,28 @@ const proyectosData = [
     imgUrl:
       "/casinoMac.png , /casinoPc.png , /casinoIpad.png , /casinoIphone.png",
     techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+      "CSS,JAVASCRIPT,REACT,NODE.JS,RESPONSIVE,POSTGRESSQL,EXPRESS.JS, REDUX, PRISMA ORM",
   },
   {
     title: "CONSUMO API",
     link: "https://github.com/tomigonzalez/React-Ts",
     info: "Pagina web en construccion, la realice con el fin de practicar el consumo de Apis , en este caso consumi la api de Twitch, Youtube, y en un futuro lo haria con Twitter e Instagram. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/coscumobile.png , /coscupc.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "REACT, CONTEXT , AXIOS , RESPONSIVE, STYLED COMPONENTS",
   },
   {
     title: "SHOES E-COMMERCE",
     link: "https://js-shoes.vercel.app/",
     info: "Desarrollo web responsive con HTML, CSS Y JS. ",
     imgUrl: "/shoesMac.png , /shoesPc.png , /shoesIpad.png , /shoesIpone.png ",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "HTML,CSS,JAVASCRIPT",
   },
   {
     title: "ECOMMERCE",
     link: "https://github.com/tomigonzalez/CoC-FrontEnd",
     info: "Desarrollo web responsive con HTML, CSS Y JS. Para el final de un modulo del programa codo a codo",
     imgUrl: "/Cocmob.png , /Cocpc.png",
-    techonolgies:
-      "HTML,CSS,JAVASCRIPT,REACT,NODE.JS, MONGODB,EXPRESS.JS,TAILWIND",
+    techonolgies: "HTML,CSS,JAVASCRIPT",
   },
 ];
 
