@@ -36,6 +36,21 @@ const Projectos = () => {
               </div>
               <div className="flex flex-col sm:text-lg text-base text-left font-ubuntu w-8/12">
                 <h2>{item.title}</h2>
+
+                {item.techonolgies && (
+                  <ul className=" flex flex-row gap-2 w-full flex-wrap">
+                    {item.techonolgies
+                      .split(",")
+                      .map((technology, techIndex) => (
+                        <li
+                          key={techIndex}
+                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.1rem] font-medium rounded text-center h-1/2 pl-1 pr-1 text-white"
+                        >
+                          {technology.trim()}
+                        </li>
+                      ))}
+                  </ul>
+                )}
               </div>
             </div>
           </Button>
