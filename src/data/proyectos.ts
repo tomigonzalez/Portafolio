@@ -29,7 +29,7 @@ const proyectosData = [
   },
   {
     title: "Casino full-stack",
-    link: "https://casino-frontend-two.vercel.app/",
+    link: "https://github.com/tomigonzalez/casino-frontend",
     info: "Esta es una web responsive que realice con React, StyledComponents, Node.js , Express y PostgreSQL. En la cual desarrolle tanto la parte del front-end como la de back-end , utilice Redux para manejar los estados en el front y Prisma para facilitar la interaccion entre la base de datos y la pagina web",
     imgUrl:
       "/casinoMac.png , /casinoPc.png , /casinoIpad.png , /casinoIphone.png",

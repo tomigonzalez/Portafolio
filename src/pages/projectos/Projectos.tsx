@@ -38,13 +38,13 @@ const Projectos = () => {
                 <h2>{item.title}</h2>
 
                 {item.techonolgies && (
-                  <ul className=" flex flex-row gap-2 w-full flex-wrap">
+                  <ul className=" flex flex-row gap-[0.2rem] w-full flex-wrap">
                     {item.techonolgies
                       .split(",")
                       .map((technology, techIndex) => (
                         <li
                           key={techIndex}
-                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.3rem] font-medium rounded text-center h-5 flex items-center pl-1 pr-1 text-white"
+                          className="bg-celeste xl:text-[0.6rem] lg:text-[0.5rem] md:text-[0.4rem] sm:text-[0.3rem] text-[0.3rem] font-medium rounded text-center xl:h-5 lg:h-5 md:h-5 sm:h-5 h-3 flex items-center pl-1 pr-1 text-white"
                         >
                           <p className="h-4 flex items-center">
                             {" "}
