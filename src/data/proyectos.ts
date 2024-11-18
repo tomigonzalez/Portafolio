@@ -1,5 +1,12 @@
 const proyectosData = [
   {
+    title: "Filmix",
+    link: "https://github.com/tomigonzalez/Pelis.IA",
+    info: "Aplicacion web, creada con Next.js/Typescript y Tailwind, Front-end responsive manejando estados con Context. El Backend esta en construccion, lo estoy realizando con Express , consumiendo la Api de TMBD(peliculas) y creando una IA de recomendacion con Python",
+    imgUrl: "/Filmixmobile.png , /Filmixpc.png , /Filmixtablet.png",
+    techonolgies: "NEXT, TAILWIND, CONTEXT, RESPONSIVE, EXPRESS, FETCH, PYTHON",
+  },
+  {
     title: "C0ker Web",
     link: "https://github.com/tomigonzalez/C0ker",
     info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
