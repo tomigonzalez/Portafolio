@@ -3,13 +3,19 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 export default function Principal() {
   return (
     <>
-      <div className="absolute top-[-5rem] flex h-40 w-full justify-center ">
+      <div className="absolute top-[-5rem] flex flex-row h-40 w-full justify-between items-center">
+        <div className="m-10 mt-32">
+          <p>Commits: </p>
+        </div>
         <div className="h-full w-40 rounded-3xl border-secondary border-4 overflow-hidden">
           <img
             src="este.png"
             alt="foto de perfil"
             className="w-full h-full object-cover"
           ></img>
+        </div>
+        <div className="m-10 mt-32">
+          <p>Repositorios: </p>
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
