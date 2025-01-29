@@ -13,7 +13,7 @@ export default function Principal() {
           ) : error ? (
             <p>Error: {error}</p>
           ) : (
-            <p>Repositorios: {repos ? repos.length - 1 : 0}</p> // Important null check!
+            <p>Repositorios: {repos ? repos.length : 0}</p> // Important null check!
           )}
         </div>
         <div className="h-full w-40 rounded-3xl border-secondary border-4 overflow-hidden">
@@ -24,7 +24,7 @@ export default function Principal() {
           ></img>
         </div>
         <div className="m-10 mt-32">
-          <p>Commits: </p>
+          <p>Commits: 56</p>
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
