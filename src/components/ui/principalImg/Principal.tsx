@@ -1,11 +1,20 @@
 import { RiVerifiedBadgeFill } from "react-icons/ri";
+import useGithubData from "../../../services/github";
 
 export default function Principal() {
+  const { repos, loading, error } = useGithubData("tomigonzalez");
+
   return (
     <>
       <div className="absolute top-[-5rem] flex flex-row h-40 w-full justify-between items-center">
         <div className="m-10 mt-32">
-          <p>Commits: </p>
+          {loading ? (
+            <p>Cargando repositorios...</p>
+          ) : error ? (
+            <p>Error: {error}</p>
+          ) : (
+            <p>Repositorios: {repos ? repos.length - 1 : 0}</p> // Important null check!
+          )}
         </div>
         <div className="h-full w-40 rounded-3xl border-secondary border-4 overflow-hidden">
           <img
@@ -15,7 +24,7 @@ export default function Principal() {
           ></img>
         </div>
         <div className="m-10 mt-32">
-          <p>Repositorios: </p>
+          <p>Commits: </p>
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
