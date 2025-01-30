@@ -1,19 +1,21 @@
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import useGithubData from "../../../services/github";
+import { RepoCountSkeleton } from "../skeleton/RepoCountSkeleton";
 
 export default function Principal() {
-  const { repos, loading, error } = useGithubData("tomigonzalez");
+  const { repoCount, commitCount, loading, error } =
+    useGithubData("tomigonzalez");
 
   return (
     <>
       <div className="absolute top-[-5rem] flex flex-row h-40 w-full justify-between items-center">
         <div className="m-10 mt-32">
           {loading ? (
-            <p>Cargando repositorios...</p>
+            <RepoCountSkeleton />
           ) : error ? (
             <p>Error: {error}</p>
           ) : (
-            <p>Repositorios: {repos ? repos.length : 0}</p> // Important null check!
+            <p>Repositorios: {repoCount}</p> // Important null check!
           )}
         </div>
         <div className="h-full w-40 rounded-3xl border-secondary border-4 overflow-hidden">
@@ -24,7 +26,14 @@ export default function Principal() {
           ></img>
         </div>
         <div className="m-10 mt-32">
-          <p>Commits: 56</p>
+          {loading ? (
+            <RepoCountSkeleton />
+          ) : error ? (
+            <p>Error: {error}</p>
+          ) : (
+            <RepoCountSkeleton />
+            // <p>Commits: {commitCount}</p> // Important null check!
+          )}
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">
