@@ -9,15 +9,17 @@ export default function Principal() {
   return (
     <>
       <div className="absolute top-[-5rem] flex flex-row h-40 w-full justify-between items-center">
-        <div className="m-10 mt-32 w-1/5 flex flex-col items-center">
+        <div className="m-10 mt-32 sm:w-1/5 w-[10%] flex flex-col items-center">
           {loading ? (
             <RepoCountSkeleton />
           ) : error ? (
             <p>Error: {error}</p>
           ) : (
-            <p className="text-xl font-bold">{repoCount} </p> // Important null check!
+            <p className="sm:text-xl text-lg sm:font-bold font-semibold">
+              {repoCount}{" "}
+            </p> // Important null check!
           )}
-          <p className="text-xs font-medium">REPOSITORIOS</p>
+          <p className="font-medium sm:text-sm text-[0.7rem]">REPOSITORIOS</p>
         </div>
         <div className="h-full w-40 rounded-3xl border-secondary border-4 overflow-hidden">
           <img
@@ -26,15 +28,17 @@ export default function Principal() {
             className="w-full h-full object-cover"
           ></img>
         </div>
-        <div className="m-10 mt-32 w-1/5 flex flex-col items-center">
+        <div className="m-10 mt-32 sm:w-1/5 w-[10%] flex flex-col items-center">
           {loading ? (
             <RepoCountSkeleton />
           ) : error ? (
             <p>Error: {error}</p>
           ) : (
-            <p className="text-xl font-bold">{commitCount} </p> // Important null check!
+            <p className="sm:text-xl text-lg sm:font-bold font-semibold">
+              {commitCount}{" "}
+            </p> // Important null check!
           )}
-          <p className="text-xs font-medium">COMMITS</p>
+          <p className="font-medium sm:text-sm text-[0.7rem]">COMMITS</p>
         </div>
       </div>
       <div className="mt-10 flex h-12 w-full items-center justify-between  sm:pl-10 sm:pr-10 pl-2 pr-2 font-ubuntu font-semibold">

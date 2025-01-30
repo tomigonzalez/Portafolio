@@ -20,19 +20,17 @@ const useGithubStats = (username: string): GithubStats => {
 
     const fetchStats = async () => {
       try {
-        const reposRes = await fetch(
-          `https://api.github.com/users/${username}/repos`
-        );
+        const [reposRes, commitsRes] = await Promise.all([
+          fetch(`https://api.github.com/users/${username}/repos`),
+          fetch(`https://api.github.com/search/commits?q=author:${username}`, {
+            headers: { Accept: "application/vnd.github.cloak-preview+json" },
+          }),
+        ]);
+
         if (!reposRes.ok) throw new Error("Error fetching repos");
         const reposData = await reposRes.json();
         setRepoCount(reposData.length);
 
-        const commitsRes = await fetch(
-          `https://api.github.com/search/commits?q=author:${username}`,
-          {
-            headers: { Accept: "application/vnd.github.cloak-preview+json" },
-          }
-        );
         if (!commitsRes.ok) throw new Error("Error fetching commits");
         const commitsData = await commitsRes.json();
 
