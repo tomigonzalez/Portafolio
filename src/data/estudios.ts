@@ -2,7 +2,14 @@ const userData = [
   {
     title: "Ingeniería en sistemas de información",
     techonolgies: "",
-    age: "EN CURSO",
+    age: "2021-EN CURSO",
+    link: "https://www.uns.edu.ar/",
+    from: "Universidad Nacional Del Sur",
+  },
+  {
+    title: "Tec. Univ. Sistemas Electrónicos Industriales Inteligentes",
+    techonolgies: "",
+    age: "2025-EN CURSO",
     link: "https://www.uns.edu.ar/",
     from: "Universidad Nacional Del Sur",
   },
@@ -10,7 +17,7 @@ const userData = [
     title: "Desarrollador Full-stack con NODE",
     techonolgies:
       "HTML,CSS,JAVASCRIPT,BOOTSTRAP,VUE.JS, NODE.JS,MONGODB,EXPRESS.JS",
-    age: "2023-EN CURSO",
+    age: "2023-2024",
     link: "https://buenosaires.gob.ar/educacion/codocodo/el-programa",
     from: "CODO A CODO",
   },

@@ -32,19 +32,13 @@ const ChipTabs: React.FC = () => {
         <button className="animate-fade xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
           MAS
         </button>
-        <div className="animate-fade-left dropdown-content  bg-tertiary  font-ubuntu font-bold">
+        <div className="animate-fade-top sm:top-[45px] top-[35px] dropdown-content  bg-tertiary  font-ubuntu font-bold">
           <a
             href="#/estudios"
-            className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
+            className="text-slate-300 hover:text-celeste hover:bg-hov font-bold xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem]"
           >
             ESTUDIOS
           </a>
-          {/* <a
-            href="#/contacto"
-            className="text-slate-300 hover:text-celeste hover:bg-hov font-bold"
-          >
-            CONTACTO
-          </a> */}
         </div>
       </div>
     </div>

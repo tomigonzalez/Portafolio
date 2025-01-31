@@ -31,10 +31,10 @@ const Estudios = () => {
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="flex lg:flex-row lg:items-center items-start flex-col  w-full justify-between ">
-              <div className="flex flex-col text-lg text-left">
+              <div className="flex flex-col text-base text-left w-4/5 text-wrap">
                 <h2>{item.title}</h2>
 
-                <p>{item.from}</p>
+                <p className="text-sm">{item.from}</p>
               </div>
 
               <div className="">
