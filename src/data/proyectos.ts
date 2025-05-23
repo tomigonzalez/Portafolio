@@ -1,4 +1,12 @@
 const proyectosData = [
+{
+  title: "Ecommerce full-stack personalizado",
+  link: "https://github.com/tomigonzalez/E-commerce", 
+  info: "Tienda online full-stack desarrollada desde cero, enfocada en el mercado argentino. Incluye funcionalidades reales como gestión de productos con talles, pagos con MercadoPago, cotización de envíos y panel admin con Strapi.",
+  imgUrl: "/ecommercePc.png, /ecommerceTablet.png, /ecommerceMobile.png",
+  techonolgies: "NEXT.JS, TYPESCRIPT, TAILWIND CSS, STRAPI, POSTGRESQL, SUPABASE, ZUSTAND, REACT QUERY"
+}
+,
   {
     title: "Filmix",
     link: "https://github.com/tomigonzalez/Pelis.IA",
@@ -22,18 +30,12 @@ const proyectosData = [
   },
   {
     title: "Wordpress-Enfold",
-    link: "https://inver.hawktestserver.com/",
+    link: "",
     info: "Esta es una web responsive que realice con Wordpress utilizando el tema Enfold, siguiendo una maqueta dada por el equipo de diseño.",
     imgUrl: "/inverPc.png , /inverIpad.png , /inverIpone.png",
     techonolgies: "WORDPRESS,RESPONSIVE, HTML, CSS, JAVASCRIPT",
   },
-  {
-    title: "Wordpress-Enfold",
-    link: "https://quiz.hawktestserver.com/",
-    info: "Esta es una web responsive que realice con Wordpress utilizando el tema Enfold, siguiendo una maqueta dada por el equipo de diseño.",
-    imgUrl: "/quizPc.png , /quizIpad.png , /quizIpone.png",
-    techonolgies: "WORDPRESS, HTML, CSS,RESPONSIVE, JAVASCRIPT",
-  },
+  
   {
     title: "Casino full-stack",
     link: "https://github.com/tomigonzalez/casino-frontend",
