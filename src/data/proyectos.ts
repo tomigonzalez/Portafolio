@@ -6,28 +6,28 @@ const proyectosData = [
   info: "Tienda online full-stack desarrollada desde cero, enfocada en el mercado argentino. Incluye funcionalidades reales como gestión de productos con talles, pagos con MercadoPago, cotización de envíos y panel admin con Strapi.",
   imgUrl: "/ecommercePc.png, /ecommerceTablet.png, /ecommerceMobile.png",
   techonolgies: "NEXT.JS, TYPESCRIPT, TAILWIND CSS, STRAPI, POSTGRESQL, SUPABASE, ZUSTAND, REACT QUERY"
-}
-,
-  {
-    title: "Filmix",
-    link: "https://github.com/tomigonzalez/Pelis.IA",
-    info: "Aplicacion web, creada con Next.js/Typescript y Tailwind, Front-end responsive manejando estados con Context. El Backend esta en construccion, lo estoy realizando con Express , consumiendo la Api de TMBD(peliculas) y creando una IA de recomendacion con Python",
-    imgUrl: "/Filmixmobile.png , /Filmixpc.png , /Filmixtablet.png",
-    techonolgies: "NEXT, TAILWIND, CONTEXT, RESPONSIVE, EXPRESS, FETCH, PYTHON",
-  },{
+},{
     title: "Tenpo DEMO",
     link: "https://github.com/tomigonzalez/Tenpo-front",
     info: "Este proyecto es una demo en la que comencé a integrar modelos 3D en la web utilizando @react-three/fiber, explorando también la implementación de animaciones avanzadas y transiciones fluidas con GSAP y ScrollTrigger.Está construido con Next.js y Tailwind CSS, es completamente responsive, y utiliza estados locales con useState para manejar la interactividad de la interfaz. Una de las partes más interesantes del desarrollo fue la combinación de animaciones sincronizadas con el scroll y gráficos en 3D, logrando una experiencia inmersiva tipo showcase de producto interactivo. Todo el diseño y funcionalidad fueron desarrollados a partir de un set de requerimientos, y como parte del proceso creé la maqueta visual en Figma para poder programar la interfaz de forma ordenada y coherente con el diseño propuesto.",
     imgUrl: "/tenpoMac.png , /tenpo.png , /tenpoMobile.png",
     techonolgies: "NEXT.JS, TAILWIND, TYPESCRIPT, GSAP, THREE",
-  },
-  {
+  }
+,{
     title: "C0ker Web",
     link: "https://github.com/tomigonzalez/C0ker",
     info: "Pagina web en construccion, creada con React/Typescript y Tailwind, consumi la api de Youtube, y en un futuro lo haria con la plataforma de streaming Kick. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/cokermobile.png , /cokerpc.png , /cokertablet.png",
     techonolgies: "REACT, AXIOS, TAILWIND, HOOKS, RESPONSIVE",
   },
+  {
+    title: "Filmix",
+    link: "https://github.com/tomigonzalez/Pelis.IA",
+    info: "Aplicacion web, creada con Next.js/Typescript y Tailwind, Front-end responsive manejando estados con Context. El Backend esta en construccion, lo estoy realizando con Express , consumiendo la Api de TMBD(peliculas) y creando una IA de recomendacion con Python",
+    imgUrl: "/Filmixmobile.png , /Filmixpc.png , /Filmixtablet.png",
+    techonolgies: "NEXT, TAILWIND, CONTEXT, RESPONSIVE, EXPRESS, FETCH, PYTHON",
+  },
+  
   {
     title: "React-Estados",
     link: "https://github.com/tomigonzalez/ChallengeNotion",
