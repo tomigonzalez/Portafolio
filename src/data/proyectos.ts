@@ -55,7 +55,7 @@ const proyectosData = [
   {
     title: "Consumo api",
     link: "https://github.com/tomigonzalez/React-Ts",
-    info: "Pagina web en construccion, la realice con el fin de practicar el consumo de Apis , en este caso consumi la api de Twitch, Youtube, y en un futuro lo haria con Twitter e Instagram. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
+    info: "PAGINA WEB EN CONSTRUCCIONNNNN, la realice con el fin de practicar el consumo de Apis , en este caso consumi la api de Twitch, Youtube, y en un futuro lo haria con Twitter e Instagram. Utilice la libreria de JavaScript Axios para las solicitudes HTTP de la web.",
     imgUrl: "/coscumobile.png , /coscupc.png",
     techonolgies: "REACT, CONTEXT , AXIOS , RESPONSIVE, STYLED COMPONENTS",
   },
