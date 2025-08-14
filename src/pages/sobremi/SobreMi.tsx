@@ -3,24 +3,16 @@ const SobreMi = () => {
     <>
       <div className="w-4/5 h-[30vh] sm:h-[40vh] lg:h-[30vh] overflow-y-auto animate-fade">
         <p>
-          Desarrollador web de 24 años especializado en Front-end con
-          experiencia en React.
-        </p>
-        <p>
-          Mejorando en Back-end utilizando Node.js, SQL, MongoDB y otras
-          tecnologías.
-        </p>
-        <p>
-          Soy aprendiz autodidacta, aunque también me formé realizando bootcamps
-          y estoy estudiando Sistemas en la Universidad.
+          Desarrollador web de 25 años, especializado en el Front-end y con
+          sólidos conocimientos en Back-end y bases de datos SQL/NoSQL
         </p>
 
-        {/* <p>
-          Actualmente estoy en el área de sistemas en la empresa "NASPERU", en
-          la cual aprendí a manejar WordPress, y también mejorar mis habilidades
-          de PHP, Laravel, JS, HTML y CSS. También estoy realizando el programa
-          formativo "Codo a Codo 4.0" sobre Full-stack con Node.js.
-        </p> */}
+        <p>
+          Soy aprendiz autodidacta, aunque también me formé realizando bootcamps
+          , actualmente estudio Ing en Sistemas y Tec. En sistemas industriales
+          inteligentes.
+        </p>
+
         <p>
           Además incursiono en UX/UI, creando mis propios diseños/maquetas e
           imágenes en Photoshop o Figma para las webs que realizo.
