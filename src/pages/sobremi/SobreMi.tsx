@@ -4,13 +4,13 @@ const SobreMi = () => {
       <div className="w-4/5 h-[30vh] sm:h-[40vh] lg:h-[30vh] overflow-y-auto animate-fade">
         <p>
           Desarrollador web de 25 años, especializado en el Front-end y con
-          sólidos conocimientos en Back-end y bases de datos SQL/NoSQL
+          sólidos conocimientos en Back-end y bases de datos SQL/NoSQL.
         </p>
 
         <p>
           Soy aprendiz autodidacta, aunque también me formé realizando bootcamps
-          , actualmente estudio Ing en Sistemas y Tec. En sistemas industriales
-          inteligentes.
+          , actualmente estudio <b>Ing en Sistemas</b> y
+          <b> Tec. En sistemas industriales inteligentes</b>.
         </p>
 
         <p>
