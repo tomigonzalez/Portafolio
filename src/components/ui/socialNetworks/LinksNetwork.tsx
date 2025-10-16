@@ -28,7 +28,7 @@ export default function LinksNetwork() {
           <ImGithub />
         </a>
         <p className="xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-semibold text-slate-300">
-          Git hub
+          Git Hub
         </p>
       </div>
       <div className="flex flex-col text-center animate-fade-down animate-delay-[250ms]">
