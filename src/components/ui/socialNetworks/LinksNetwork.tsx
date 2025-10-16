@@ -45,7 +45,7 @@ export default function LinksNetwork() {
       </div>
       <div className="flex flex-col text-center animate-fade-down animate-delay-[350ms]">
         <a
-          href="https://drive.google.com/file/d/1uMBHqTKHnAlAspvs3J2GtZnIr0NOMLNe/view"
+          href="https://drive.google.com/file/d/1lqFs515dh6rLiZllIQJLmuMDOcTyfehW/view?usp=sharing"
           className="self-center text-2xl sm:text-3xl text-slate-300 border-tertiary border bg-tertiary hover:border-celeste p-2 rounded-md hover:text-celeste "
           target="_blank"
         >
