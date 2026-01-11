@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Principal from "../ui/principalImg/Principal";
 import NavBar from "../ui/navBar/navBar";
 import LinksNetwork from "../ui/socialNetworks/LinksNetwork";
+import BottomNotification from "../ui/notificacion/ButtomNotification";
 
 const LayoutPrimario: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const LayoutPrimario: React.FC = () => {
       <section className="w-full  h-auto flex mt-4 flex-col items-center gap-4  font-ubuntu sm:text-[1rem] sm:font-normal text-[0.9rem]">
         <Outlet />
       </section>
+      <BottomNotification />
     </div>
   );
 };
