@@ -1,79 +1,89 @@
-import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
 import {
+  FaHtml5,
+  FaCss3,
+  FaJsSquare,
+  FaReact,
   FaAngular,
   FaBootstrap,
-  FaCss3,
-  FaHtml5,
-  FaJava,
-  FaJsSquare,
+  FaWordpress,
   FaNodeJs,
   FaPhp,
-  FaReact,
-  FaVuejs,
+  FaJava,
   FaFigma,
-  FaWordpress,
+  FaDocker,
 } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
+import { TbBrandNextjs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoTypescript, BiLogoMongodb } from "react-icons/bi";
+import { IoLogoFirebase } from "react-icons/io5";
 import {
-  SiAdobephotoshop,
-  SiAxios,
   SiExpress,
   SiMysql,
-  SiPostman,
-  SiRedux,
   SiSqlite,
   SiVisualstudiocode,
+  SiPostman,
+  SiRedux,
+  SiAxios,
+  SiAdobephotoshop,
 } from "react-icons/si";
+import SkillItem from "./SkillItem";
 
 const Habilidades = () => {
   return (
-    <div className="w-4/5 h-56 overflow-y-auto flex flex-col gap-4 pb-1  animate-fade">
-      <div className="flex flex-col gap-2">
-        <h2 className="text-slate-300">Front End</h2>
-        <div className="flex flex-row w-full gap-2 text-3xl">
-          <FaHtml5 className="icon" />
-          <FaCss3 className="icon" />
-          <FaJsSquare className="icon" />
-          <FaReact className="icon" />
-          <FaVuejs className="icon" />
-          <RiTailwindCssFill className="icon" />
-          <BiLogoTypescript className="icon" />
-          <FaAngular className="icon" />
-          <FaBootstrap className="icon" />
-          <FaWordpress className="icon" />
+    <div className="w-4/5 h-56 overflow-y-auto overflow-hidden flex flex-col gap-6 pb-2 animate-fade">
+      {/* Front End */}
+      <section className="flex flex-col gap-3">
+        <h2 className="text-slate-300 text-sm tracking-wide">Front End</h2>
+        <div className="grid grid-cols-5 gap-4">
+          <SkillItem icon={<FaHtml5 />} label="HTML" />
+          <SkillItem icon={<FaCss3 />} label="CSS" />
+          <SkillItem icon={<FaJsSquare />} label="JavaScript" />
+          <SkillItem icon={<FaReact />} label="React" />
+          <SkillItem icon={<TbBrandNextjs />} label="Next js" />
+          <SkillItem icon={<RiTailwindCssFill />} label="Tailwind" />
+          <SkillItem icon={<BiLogoTypescript />} label="TypeScript" />
+          <SkillItem icon={<FaAngular />} label="Angular" />
+          <SkillItem icon={<FaBootstrap />} label="Bootstrap" />
+          <SkillItem icon={<FaWordpress />} label="WordPress" />
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <h2 className="text-slate-300">Back End</h2>
-        <div className="flex flex-row w-full gap-2 text-3xl">
-          <FaNodeJs className="icon" />
-          <SiExpress className="icon" />
-          <IoLogoFirebase className="icon" />
-          <FaPhp className="icon" />
-          <FaJava className="icon" />
+      </section>
+
+      {/* Back End */}
+      <section className="flex flex-col gap-3">
+        <h2 className="text-slate-300 text-sm tracking-wide">Back End</h2>
+        <div className="grid grid-cols-5 gap-4">
+          <SkillItem icon={<FaNodeJs />} label="Node.js" />
+          <SkillItem icon={<SiExpress />} label="Express" />
+          <SkillItem icon={<IoLogoFirebase />} label="Firebase" />
+          <SkillItem icon={<FaPhp />} label="PHP" />
+          <SkillItem icon={<FaJava />} label="Java" />
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <h2 className="text-slate-300">Database</h2>
-        <div className="flex flex-row w-full gap-2 text-3xl">
-          <BiLogoMongodb className="icon" />
-          <SiMysql className="icon" />
-          <SiSqlite className="icon" />
-          <IoLogoFirebase className="icon" />
+      </section>
+
+      {/* Database */}
+      <section className="flex flex-col gap-3">
+        <h2 className="text-slate-300 text-sm tracking-wide">Database</h2>
+        <div className="grid grid-cols-5 gap-4">
+          <SkillItem icon={<BiLogoMongodb />} label="MongoDB" />
+          <SkillItem icon={<SiMysql />} label="MySQL" />
+          <SkillItem icon={<SiSqlite />} label="SQLite" />
+          <SkillItem icon={<IoLogoFirebase />} label="Firestore" />
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <h2 className="text-slate-300">Herramientas</h2>
-        <div className="flex flex-row w-full gap-2 text-3xl">
-          <SiVisualstudiocode className="icon" />
-          <SiPostman className="icon" />
-          <SiRedux className="icon" />
-          <SiAxios className="icon" />
-          <SiAdobephotoshop className="icon" />
-          <FaFigma className="icon" />
+      </section>
+
+      {/* Herramientas */}
+      <section className="flex flex-col gap-3">
+        <h2 className="text-slate-300 text-sm tracking-wide">Herramientas</h2>
+        <div className="grid grid-cols-5 gap-4">
+          <SkillItem icon={<SiVisualstudiocode />} label="VS Code" />
+          <SkillItem icon={<SiPostman />} label="Postman" />
+          <SkillItem icon={<SiRedux />} label="Redux" />
+          <SkillItem icon={<SiAxios />} label="Axios" />
+          <SkillItem icon={<SiAdobephotoshop />} label="Photoshop" />
+          <SkillItem icon={<FaFigma />} label="Figma" />
+          <SkillItem icon={<FaDocker />} label="Docker" />
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -5,10 +5,8 @@ const BottomNotification = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Trigger animación de entrada
     setShow(true);
 
-    // Auto close
     const timer = setTimeout(() => {
       handleClose();
     }, 5000);
@@ -18,18 +16,28 @@ const BottomNotification = () => {
 
   const handleClose = () => {
     setShow(false);
-    setTimeout(() => setVisible(false), 300); // espera a que termine la animación
+    setTimeout(() => setVisible(false), 300);
   };
 
   if (!visible) return null;
 
   return (
     <div
-      className={`fixed top-6 left-1/2 z-50 -translate-x-1/2 transition-all duration-300 ease-out
-        ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
+      className={`
+        fixed z-50 transition-all duration-300 ease-out
+        left-0 top-6 w-full px-3
+        sm:left-1/2 sm:top-6 sm:w-auto sm:px-0 sm:-translate-x-1/2
+        ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}
       `}
     >
-      <div className="relative max-w-md rounded-2xl bg-black/50 px-6 py-4 text-sm text-white shadow-xl backdrop-blur-md">
+      <div
+        className="
+          relative w-full sm:max-w-md
+          rounded-2xl
+          bg-black/60 px-5 py-4
+          text-sm text-white shadow-xl backdrop-blur-md
+        "
+      >
         <button
           onClick={handleClose}
           className="absolute right-3 top-2 text-white/70 hover:text-white"
