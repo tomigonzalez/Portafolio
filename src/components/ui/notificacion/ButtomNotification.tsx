@@ -9,7 +9,7 @@ const BottomNotification = () => {
 
     const timer = setTimeout(() => {
       handleClose();
-    }, 5000);
+    }, 6000);
 
     return () => clearTimeout(timer);
   }, []);
