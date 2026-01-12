@@ -15,7 +15,7 @@ const experienciaData = [
       " Me desempeñe en el area de sistemas en {NASPERU}. Desarrollando sitios web utilizando diferentes temas de Wordpress y los modifico/personalizo utilizando HTML, CSS y JavaScript. Ademas mejore mis habilidades en PHP Y Laravel. ",
     age: "2024-2025",
     link: "https://www.nasperu.com/",
-    from: "NASPERU",
+    from: "Nasperu",
   },
   {
     area: "Full Stack",
@@ -25,7 +25,7 @@ const experienciaData = [
       "Realice diversos proyectos como desarrollador web full stack aunque mi fuerte es la creacion de interfaces de usuario (front-end), tambien desarrollo APIs RESTful y bases de datos con Node.js, Express.js , MongoDB y MySQL. Puedo crear sitios web dinámicos y personalizables con WordPress. Comprensión de los principios de desarrollo web y las mejores prácticas. Ademas realizo mis diseños/personalizacion con herramientas como Figma, Photoshop, Inkscape , etc. Y como control de versiones a GIT ",
     age: "2020-Actual",
     link: "#",
-    from: "FREELANCE",
+    from: "Freelance",
   },
   
   

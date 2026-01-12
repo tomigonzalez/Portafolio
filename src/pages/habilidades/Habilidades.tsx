@@ -27,6 +27,7 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 import SkillItem from "./SkillItem";
+import { FaGithub } from "react-icons/fa6";
 
 const Habilidades = () => {
   return (
@@ -82,6 +83,7 @@ const Habilidades = () => {
           <SkillItem icon={<SiAdobephotoshop />} label="Photoshop" />
           <SkillItem icon={<FaFigma />} label="Figma" />
           <SkillItem icon={<FaDocker />} label="Docker" />
+          <SkillItem icon={<FaGithub />} label="Git Hub" />
         </div>
       </section>
     </div>
