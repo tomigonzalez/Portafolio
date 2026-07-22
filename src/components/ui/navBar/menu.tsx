@@ -5,7 +5,7 @@ import { useLocation, Link } from "react-router-dom";
 const tabs = [
   { name: "SOBRE MI", path: "/" },
   { name: "EXPERIENCIA", path: "/experiencia" },
-  { name: "HABILIDADES", path: "/habilidades" },
+  { name: "ESTUDIOS", path: "/estudios" },
   { name: "PROYECTOS", path: "/projectos" },
 ];
 
@@ -34,10 +34,10 @@ const ChipTabs: React.FC = () => {
         </button>
         <div className="animate-fade-top sm:top-[45px] top-[35px] dropdown-content  bg-tertiary  font-ubuntu font-bold">
           <a
-            href="#/estudios"
+            href="#/habilidades"
             className="text-slate-300 hover:text-celeste hover:bg-hov font-bold xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem]"
           >
-            ESTUDIOS
+            HABILIDADES
           </a>
         </div>
       </div>

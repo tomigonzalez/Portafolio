@@ -31,10 +31,12 @@ import { FaGithub } from "react-icons/fa6";
 
 const Habilidades = () => {
   return (
-    <div className="w-4/5 h-56 overflow-y-auto overflow-hidden flex flex-col gap-6 pb-2 animate-fade">
+    <div className="w-4/5 h-[85%] sm:h-96 overflow-y-auto overflow-hidden flex flex-col gap-6 pb-2 animate-fade">
       {/* Front End */}
       <section className="flex flex-col gap-3">
-        <h2 className="text-slate-300 text-sm tracking-wide">Front End</h2>
+        <h2 className="text-slate-300 text-sm tracking-wide underline">
+          Front End
+        </h2>
         <div className="grid grid-cols-5 gap-4">
           <SkillItem icon={<FaHtml5 />} label="HTML" />
           <SkillItem icon={<FaCss3 />} label="CSS" />
@@ -51,7 +53,9 @@ const Habilidades = () => {
 
       {/* Back End */}
       <section className="flex flex-col gap-3">
-        <h2 className="text-slate-300 text-sm tracking-wide">Back End</h2>
+        <h2 className="text-slate-300 text-sm tracking-wide underline">
+          Back End
+        </h2>
         <div className="grid grid-cols-5 gap-4">
           <SkillItem icon={<FaNodeJs />} label="Node.js" />
           <SkillItem icon={<SiExpress />} label="Express" />
@@ -63,7 +67,9 @@ const Habilidades = () => {
 
       {/* Database */}
       <section className="flex flex-col gap-3">
-        <h2 className="text-slate-300 text-sm tracking-wide">Database</h2>
+        <h2 className="text-slate-300 text-sm tracking-wide underline">
+          Database
+        </h2>
         <div className="grid grid-cols-5 gap-4">
           <SkillItem icon={<BiLogoMongodb />} label="MongoDB" />
           <SkillItem icon={<SiMysql />} label="MySQL" />
@@ -74,7 +80,9 @@ const Habilidades = () => {
 
       {/* Herramientas */}
       <section className="flex flex-col gap-3">
-        <h2 className="text-slate-300 text-sm tracking-wide">Herramientas</h2>
+        <h2 className="text-slate-300 text-sm tracking-wide underline">
+          Herramientas
+        </h2>
         <div className="grid grid-cols-5 gap-4">
           <SkillItem icon={<SiVisualstudiocode />} label="VS Code" />
           <SkillItem icon={<SiPostman />} label="Postman" />
