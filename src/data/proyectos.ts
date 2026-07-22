@@ -1,5 +1,11 @@
 const proyectosData = [
-  
+  {
+  title: "Web App Full-Stack de Entrenamiento",
+  link: "https://github.com/tomigonzalez/lightweight", 
+  info: "Plataforma web full-stack diseñada para el seguimiento de entrenamientos de fuerza y sobrecarga progresiva. Incluye autenticación de usuarios con login y registro, gestión personalizada de ejercicios, interfaz fluida e interactiva con Tailwind CSS, guardado en tiempo real y panel de historial por rutina/usuario.",
+  imgUrl: "/lightPC.png, /lightTablet.png, /lightMoblie.png",
+  techonolgies: "NEXT.JS, TYPESCRIPT, TAILWIND CSS, POSTGRESQL, SUPABASE",
+},
 {
   title: "Ecommerce full-stack personalizado",
   link: "https://github.com/tomigonzalez/E-commerce", 
