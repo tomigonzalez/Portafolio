@@ -23,7 +23,7 @@ const Estudios = () => {
   return (
     <div className="w-4/5 sm:h-56 h-96 overflow-y-auto">
       {data.map((item, index) => (
-        <div key={index} className="w-full h-auto ">
+        <div key={index} className="w-full h-auto">
           <Button
             variant="flat"
             onPress={() => handleOpen(index)}
