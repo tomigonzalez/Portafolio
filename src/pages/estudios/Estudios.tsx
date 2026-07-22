@@ -37,7 +37,7 @@ const Estudios = () => {
                 <p className="underline ">{item.from}</p>
               </div>
 
-              <div className=" text-sm">
+              <div className="text-sm">
                 <p>{item.age}</p>
               </div>
             </div>
