@@ -21,23 +21,23 @@ const Estudios = () => {
   };
 
   return (
-    <div className="w-4/5 h-full pr-2 overflow-y-auto overflow-x-hidden flex flex-col gap-4">
+    <div className="w-4/5 sm:h-56 h-96 overflow-y-auto">
       {data.map((item, index) => (
-        <div key={index} className="w-full h-full ">
+        <div key={index} className="w-full h-auto ">
           <Button
             variant="flat"
             onPress={() => handleOpen(index)}
-            className={`animate-fade text-slate-300 capitalize z-50 w-full flex flex-col p-2 bg-tertiary rounded-lg h-auto border-tertiary border hover:border-celeste transition-opacity duration-500 ease-in-out`}
+            className={`animate-fade text-slate-300 capitalize mb-4 w-full flex flex-col p-2 bg-tertiary rounded-lg h-auto border-tertiary border hover:border-celeste transition-opacity duration-500 ease-in-out`}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="flex lg:flex-row lg:items-center items-start flex-col  w-full justify-between ">
               <div className="flex flex-col text-base text-left w-4/5 text-wrap">
-                <h2>{item.title}</h2>
+                <h2 className="font-bold">{item.title}</h2>
 
-                <p className="text-sm">{item.from}</p>
+                <p className="underline ">{item.from}</p>
               </div>
 
-              <div className="">
+              <div className=" text-sm">
                 <p>{item.age}</p>
               </div>
             </div>

@@ -15,15 +15,16 @@ const AppRoutes: React.FC = () => {
       <Route path="/" element={<LayoutPrimario />}>
         <Route index element={<SobreMi />}></Route>
         <Route path="experiencia" element={<Experiencia />}></Route>
-        <Route path="habilidades" element={<Habilidades />}></Route>
+        {/* <Route path="habilidades" element={<Habilidades />}></Route> */}
         <Route path="projectos" element={<Projectos />}></Route>
+        <Route path="estudios" element={<Estudios />}></Route>
       </Route>
 
       {/* <Route path="/contacto" element={<LayoutSecundario />}>
         <Route index element={<Contacto />}></Route>
       </Route> */}
-      <Route path="/estudios" element={<LayoutSecundario />}>
-        <Route index element={<Estudios />}></Route>
+      <Route path="/habilidades" element={<LayoutSecundario />}>
+        <Route index element={<Habilidades />}></Route>
       </Route>
 
       <Route path="*" element={<div />} />
