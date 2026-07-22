@@ -21,7 +21,7 @@ const Experiencia = () => {
   };
 
   return (
-    <div className="w-4/5 sm:h-56 h-[22rem] overflow-y-auto">
+    <div className="w-4/5 sm:h-56 h-[20rem] overflow-y-auto">
       {data.map((item, index) => (
         <div key={index}>
           <Button
