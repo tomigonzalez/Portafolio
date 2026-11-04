@@ -1,4 +1,10 @@
-const proyectosData = [
+const proyectosData = [{
+  title: "Carpoo - Plataforma de Carpooling Interurbano",
+  link: "https://github.com/tomigonzalez/Carpoo",
+  info: "Aplicación web full-stack de carpooling interurbano diseñada para centralizar viajes regionales fuera de grupos informales. Cuenta con sistema automatizado de reserva y selección de asientos, flujo de validación directa mediante WhatsApp, panel de control de viajes para conductores y pasajeros, e interfaz dinámica responsive.",
+  imgUrl: "/carpo.png",
+  techonolgies: "NEXT.JS, TYPESCRIPT, TAILWIND CSS, PRISMA, POSTGRESQL, SUPABASE/NEON, IA",
+},
   {
   title: "Web App Full-Stack de Entrenamiento",
   link: "https://github.com/tomigonzalez/lightweight", 

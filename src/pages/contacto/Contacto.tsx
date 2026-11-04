@@ -1,63 +1,93 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
+import PageHeader from "../../components/ui/pageHeader/PageHeader";
 
-interface ContactFormProps {}
-
-const ContactForm: React.FC<ContactFormProps> = () => {
+const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a un servidor o mostrando un mensaje de éxito
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+    // TODO: conectar con un servicio de envío real antes de publicar la ruta.
     console.log({ name, email, message });
   };
 
   return (
-    <div className="w-4/5 h-full flex-col justify-start gap-6  overflow-y-auto rounded-lg flex ">
-      <div className="text-4xl text-slate-300">
-        <h2>Contactate conmigo :D</h2>
-      </div>
-      <form onSubmit={handleSubmit} className="w-11/12">
-        <div className="mb-4">
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full px-3 py-2  border bg-tertiary  border-hov rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Nombre"
-            required
-          />
+    <div className="flex h-full w-full min-w-0 flex-col">
+      <PageHeader title="Contacto" meta="Hablemos" />
+
+      <form
+        onSubmit={handleSubmit}
+        className="flex min-h-0 min-w-0 flex-1 flex-col gap-4 overflow-y-auto pr-1"
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="space-y-1.5">
+            <label
+              htmlFor="name"
+              className="text-xs font-medium text-muted"
+            >
+              Nombre
+            </label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              className="w-full rounded-xl border border-line bg-surface-2 px-3 py-2.5 text-sm text-fg placeholder:text-faint focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/20"
+              placeholder="Tu nombre"
+              autoComplete="name"
+              required
+            />
+          </div>
+
+          <div className="space-y-1.5">
+            <label
+              htmlFor="email"
+              className="text-xs font-medium text-muted"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              className="w-full rounded-xl border border-line bg-surface-2 px-3 py-2.5 text-sm text-fg placeholder:text-faint focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/20"
+              placeholder="tu@email.com"
+              autoComplete="email"
+              required
+            />
+          </div>
         </div>
-        <div className="mb-4">
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-3 py-2 border bg-tertiary  border-hov rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div className="mb-6">
+
+        <div className="space-y-1.5">
+          <label
+            htmlFor="message"
+            className="text-xs font-medium text-muted"
+          >
+            Mensaje
+          </label>
           <textarea
             id="message"
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className="w-full px-3 bg-tertiary  border-hov py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+            onChange={(event) => setMessage(event.target.value)}
+            className="w-full rounded-xl border border-line bg-surface-2 px-3 py-2.5 text-sm text-fg placeholder:text-faint focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/20"
             rows={4}
-            placeholder="Mensaje"
+            placeholder="Contame sobre la oportunidad o proyecto"
             required
           />
         </div>
-        <button
-          type="submit"
-          className="w-40 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-        >
-          Enviar
-        </button>
+
+        <div>
+          <button
+            type="submit"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-ink transition-colors duration-200 hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+          >
+            Enviar mensaje
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
       </form>
     </div>
   );

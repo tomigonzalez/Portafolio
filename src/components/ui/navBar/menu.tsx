@@ -1,46 +1,31 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
+import { Link, useLocation } from "react-router-dom";
 
 const tabs = [
-  { name: "SOBRE MI", path: "/" },
-  { name: "EXPERIENCIA", path: "/experiencia" },
-  { name: "ESTUDIOS", path: "/estudios" },
-  { name: "PROYECTOS", path: "/projectos" },
+  { name: "Sobre mí", path: "/" },
+  { name: "Experiencia", path: "/experiencia" },
+  { name: "Estudios", path: "/estudios" },
+  { name: "Proyectos", path: "/projectos" },
 ];
 
 const ChipTabs: React.FC = () => {
-  const location = useLocation();
-  const [selected, setSelected] = useState<string>(location.pathname);
-
-  useEffect(() => {
-    setSelected(location.pathname);
-  }, [location.pathname]);
+  const { pathname } = useLocation();
 
   return (
-    <div className="h-full w-full  justify-between flex items-center font-ubuntu font-bold">
-      {tabs.map((tab) => (
-        <Chip
-          text={tab.name}
-          path={tab.path}
-          selected={selected === tab.path}
-          setSelected={setSelected}
-          key={tab.path}
-        />
-      ))}
-      <div className="dropdown">
-        <button className="animate-fade xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem] font-ubuntu font-bold dropbtn rounded-md  text-slate-300 hover:text-celeste  hover:bg-hov">
-          MAS
-        </button>
-        <div className="animate-fade-top sm:top-[45px] top-[35px] dropdown-content  bg-tertiary  font-ubuntu font-bold">
-          <a
-            href="#/habilidades"
-            className="text-slate-300 hover:text-celeste hover:bg-hov font-bold xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem]"
-          >
-            HABILIDADES
-          </a>
-        </div>
+    <div className="flex w-full items-center justify-between gap-1">
+      <div className="nav-scroll flex min-w-0 items-center gap-0.5 overflow-x-auto">
+        {tabs.map((tab) => (
+          <Chip
+            key={tab.path}
+            text={tab.name}
+            path={tab.path}
+            selected={pathname === tab.path}
+          />
+        ))}
       </div>
+      <MoreMenu />
     </div>
   );
 };
@@ -49,35 +34,96 @@ interface ChipProps {
   text: string;
   path: string;
   selected: boolean;
-  setSelected: (path: string) => void;
 }
 
-const Chip: React.FC<ChipProps> = ({ text, path, selected, setSelected }) => {
+const Chip: React.FC<ChipProps> = ({ text, path, selected }) => {
   return (
-    <>
-      <Link to={path} className="h-full content-center animate-fade">
-        <button
-          onClick={() => setSelected(path)}
-          className={`h-full ${
-            selected
-              ? "text-celeste"
-              : "text-slate-300 hover:text-slate-200 hover:bg-hov"
-          } flex items-center transition-colors px-2.5 py-0.5 rounded-md relative`}
-        >
-          <span className="relative z-10 xl:text-[0.8rem] lg:text-[0.8rem] md:text-[0.8rem] sm:text-[0.8rem] text-[0.5rem]">
-            {text}
-          </span>
-          {selected && (
-            <motion.span
-              layoutId="pill-tab"
-              transition={{ type: "spring", duration: 0.5 }}
-              className="absolute inset-0 z-0 bg-gradient-to-r from-hov to-hov rounded-md "
-            ></motion.span>
-          )}
-        </button>
-      </Link>
-    </>
+    <Link
+      to={path}
+      aria-current={selected ? "page" : undefined}
+      className={`relative flex shrink-0 items-center rounded-lg px-1.5 py-1.5 text-xs font-medium transition-colors duration-200 ease-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 sm:px-2.5 sm:text-[0.8rem] ${
+        selected
+          ? "text-fg"
+          : "text-muted hover:bg-surface-3/70 hover:text-fg"
+      }`}
+    >
+      {selected && (
+        <motion.span
+          layoutId="nav-pill"
+          transition={{ type: "spring", stiffness: 380, damping: 30 }}
+          className="absolute inset-0 rounded-lg border border-line-strong bg-surface-3"
+        />
+      )}
+      <span className="relative z-10 whitespace-nowrap">{text}</span>
+    </Link>
   );
 };
+
+function MoreMenu() {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!containerRef.current?.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open]);
+
+  return (
+    <div className="relative shrink-0" ref={containerRef}>
+      <button
+        ref={buttonRef}
+        type="button"
+        aria-expanded={open}
+        aria-controls="more-menu"
+        onClick={() => setOpen((value) => !value)}
+        className="flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-medium text-muted transition-colors duration-200 hover:bg-surface-3 hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 sm:px-2.5 sm:text-[0.8rem]"
+      >
+        Más
+        <FiChevronDown
+          aria-hidden="true"
+          className={`text-xs transition-transform duration-200 ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {open && (
+        <div
+          id="more-menu"
+          className="absolute right-0 top-full z-30 mt-2 min-w-[10rem] overflow-hidden rounded-xl border border-line bg-surface-2 p-1 shadow-card"
+        >
+          <Link
+            to="/habilidades"
+            onClick={() => setOpen(false)}
+            className="block rounded-lg px-3 py-2 text-xs font-medium text-muted transition-colors duration-200 hover:bg-surface-3 hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 sm:text-sm"
+          >
+            Habilidades
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default ChipTabs;

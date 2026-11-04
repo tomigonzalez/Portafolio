@@ -1,15 +1,13 @@
-import "../../../style/dropdown.css";
 import ChipTabs from "./menu";
 
 export default function NavBar() {
   return (
-    <header className=" w-full sm:h-[3rem] h-[40px] sticky  flex justify-center z-10">
-      <nav className="flex gap-2 relative sm:w-10/12 w-11/12 p-1 bg-tertiary rounded-xl ">
-        <div className="flex w-full flex-row">
-          <div className="flex w-full rounded-xl  overflow-hidden">
-            <ChipTabs></ChipTabs>
-          </div>
-        </div>
+    <header className="sticky top-0 z-20 flex w-full min-w-0 justify-center px-4 sm:px-6">
+      <nav
+        aria-label="Navegación principal"
+        className="flex w-full min-w-0 items-center rounded-xl border border-line/80 bg-surface-2/80 p-2 backdrop-blur"
+      >
+        <ChipTabs />
       </nav>
     </header>
   );
