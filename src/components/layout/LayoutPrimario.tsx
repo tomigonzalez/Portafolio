@@ -3,18 +3,19 @@ import { Outlet } from "react-router-dom";
 import Principal from "../ui/principalImg/Principal";
 import NavBar from "../ui/navBar/navBar";
 import LinksNetwork from "../ui/socialNetworks/LinksNetwork";
-import BottomNotification from "../ui/notificacion/ButtomNotification";
 
 const LayoutPrimario: React.FC = () => {
   return (
-    <div className="animate-fade h-5/6  xl:w-2/4 lg:w-4/6 md:w-9/12 sm:w-9/12 w-11/12 mt-16 absolute rounded-3xl bg-secondary  text-white ">
-      <Principal></Principal>
-      <LinksNetwork></LinksNetwork>
-      <NavBar></NavBar>
-      <section className="w-full  h-auto flex mt-4 flex-col items-center gap-4  font-ubuntu sm:text-[1rem] sm:font-normal text-[0.9rem]">
+    <div className="surface-card animate-fade relative flex h-[calc(100dvh-8rem)] min-h-[540px] w-full min-w-0 max-w-[780px] flex-col rounded-[28px] border border-line/80 text-fg shadow-card sm:h-[calc(100dvh-10rem)] sm:max-h-[880px]">
+      <Principal />
+      <LinksNetwork />
+      <NavBar />
+      <section
+        id="contenido"
+        className="mt-2 flex min-h-0 min-w-0 flex-1 flex-col items-center gap-4 px-4 pb-5 font-sans text-[0.95rem] sm:px-6"
+      >
         <Outlet />
       </section>
-      <BottomNotification />
     </div>
   );
 };
